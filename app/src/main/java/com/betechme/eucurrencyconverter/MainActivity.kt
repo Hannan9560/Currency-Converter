@@ -73,7 +73,6 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Vi
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
-        // retrofitInterface = retrofit!!.create<RetrofitInterface>(RetrofitInterface::class.java!!)
         retrofitInterface = retrofit.create(RetrofitInterface::class.java)
         sendRequestToServer()
     }
